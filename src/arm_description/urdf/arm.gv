@@ -1,0 +1,29 @@
+digraph G {
+node [shape=box];
+"body" [label="body"];
+"left_link1" [label="left_link1"];
+"left_link2" [label="left_link2"];
+"left_link3" [label="left_link3"];
+"left_link4" [label="left_link4"];
+"right_link1" [label="right_link1"];
+"right_link2" [label="right_link2"];
+"right_link3" [label="right_link3"];
+"right_link4" [label="right_link4"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"body" -> "body__left_link1" [label="xyz: -0.3 0 1.2 \nrpy: 0 -0 0"]
+"body__left_link1" -> "left_link1"
+"left_link1" -> "left_link1__left_link2" [label="xyz: -0.45 0 1.2 \nrpy: 0 -0 0"]
+"left_link1__left_link2" -> "left_link2"
+"left_link2" -> "left_link2__left_link3" [label="xyz: -0.5 0 0.95 \nrpy: 0 -0 0"]
+"left_link2__left_link3" -> "left_link3"
+"left_link3" -> "left_link3__left_link4" [label="xyz: -0.5 0 0.7 \nrpy: 0 -0 0"]
+"left_link3__left_link4" -> "left_link4"
+"body" -> "body__right_link1" [label="xyz: 0.3 0 1.2 \nrpy: 0 -0 0"]
+"body__right_link1" -> "right_link1"
+"right_link1" -> "right_link1__right_link2" [label="xyz: 0.45 0 1.2 \nrpy: 0 -0 0"]
+"right_link1__right_link2" -> "right_link2"
+"right_link2" -> "right_link2__right_link3" [label="xyz: 0.5 0 0.95 \nrpy: 0 -0 0"]
+"right_link2__right_link3" -> "right_link3"
+"right_link3" -> "right_link3__right_link4" [label="xyz: 0.5 0 0.7 \nrpy: 0 -0 0"]
+"right_link3__right_link4" -> "right_link4"
+}

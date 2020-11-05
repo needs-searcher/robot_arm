@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/juhyeong/mm_ws/devel -DCMAKE_INSTALL_PREFIX=/home/juhyeong/mm_ws/install -G Unix Makefiles
